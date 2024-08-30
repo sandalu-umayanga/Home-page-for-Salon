@@ -247,13 +247,15 @@ footer > .logo > img{
 }
 
 .copyright {
-    margin-top: 15px;
+    color: rgb(244, 244, 244);
+    font-size: 1.2em;
 }
 
 .copyright > p{
     color: rgb(244, 244, 244);
     font-size: 1.2em;
 }
+
 
 
 
