@@ -252,6 +252,12 @@ footer > .logo > img{
     margin-top: 15px;
 }
 
+.copyright > p{
+    color: rgb(244, 244, 244);
+    font-size: 1.2em;
+}
+
+
 
 
 @media (max-width: 610px) {
