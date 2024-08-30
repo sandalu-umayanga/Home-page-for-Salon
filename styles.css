@@ -149,7 +149,7 @@ a {
 }
 
 .text-overlay:hover {
-    width:100vw;
+    
     background-color:rgba(59, 13, 7); 
     transform: translate(-50%, -50%) scale(1.2);
 }
@@ -247,9 +247,12 @@ footer > .logo > img{
 }
 
 .copyright {
+    margin-top: 15px;
+}
+
+.copyright > p{
     color: rgb(244, 244, 244);
     font-size: 1.2em;
-    margin-top: 15px;
 }
 
 
