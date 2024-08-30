@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://sandalu-umayanga.github.io/storage/backv1.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    grid-template-columns: auto 1fr;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background: linear-gradient(to right, #000000, #874e22);
+    color: transparent;
+}
+
+
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+.logo > img {
+    height: 30px;
+    margin-right: 30px;
+    animation: logoRotator 13s ease-in-out infinite;
+}
+
+@keyframes logoRotator {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg); 
+    }
+    60% {
+        transform: rotate(360deg); 
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
+.logo > h1 {
+    background: linear-gradient(to right, #ff3300, #545352);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimator 5s ease infinite;
+}
+
+@keyframes gradientAnimator {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position:100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+
+.shortcuts {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.shortcuts > li {
+    list-style-type: none;
+}
+
+.shortcuts > li a {
+    text-decoration: none;
+    color: #ffffff; 
+    border: 2px solid transparent;
+    padding:2px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.shortcuts > li a:hover {
+    border-color: rgb(117, 169, 44);
+    background-color: #585353;
+}
+
+.shortcutIcon {
+    display:none;
+}
+
+.main-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    
+    
+}
+
+.image-container img:hover {
+    opacity: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.85; 
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text-overlay {
+    display:inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    font-family: Arial, sans-serif;
+    background-color: rgba(59, 13, 7, 0.5); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition:1s;
+}
+
+.text-overlay:hover {
+    width:100vw;
+    background-color:rgba(59, 13, 7); 
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.description-section {
+    margin-top:80px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+.description {
+    padding:20px;
+    border-radius: 15px;
+    max-width:1100px;
+    width: 100%;
+    background-color: rgba(59, 13, 7, 0.3);
+  
+    
+}
+
+.description:focus {
+    background-color: rgb(201, 155, 149, 0.7);
+}
+
+.description:hover {
+    background-color: rgba(59, 13, 7, 0.5);
+    box-shadow: -15px -15px 10px rgba(218, 255, 123, 0.3),
+                15px 15px 10px rgba(218, 255, 123, 0.3),
+                -15px 15px 10px rgba(218, 255, 123, 0.3),
+                15px -15px 10px rgba(218, 255, 123, 0.3);
+}
+
+.description > h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        2px 2px 7px rgba(228, 10, 10, 0.5), /* First shadow */
+        5px 1px 7px rgb(0, 0, 0),
+        1px 5px 7px rgb(27, 206, 57); /* Second shadow */
+}
+
+.description > p {
+    line-height: 1.5em;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    margin-top:80px;
+    background: linear-gradient(to right, #000000, #874e22);
+    padding:15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer > .logo > img{
+    height: 50px;
+
+}
+
+.footer-content {
+    max-width: 200px !important;
+    width: 100%;
+}
+
+.contact {
+    max-width: 200px;
+    width: 100%;
+}
+
+.contact > p {
+    color:white;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+}
+
+.follow > div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-right: 25px;
+}
+
+.links {
+    color: white;
+    transition: 1s;
+}
+
+.links:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 610px) {
+    
+    .shortcuts {
+        display: none;
+    }
+    .shortcutIcon {
+        display: block;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 400px) {
+    .description {
+        margin: 0px;
+        margin-top:80px;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 230px) {
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:300px) {
+    footer > .logo > img{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    
+    }
+}
