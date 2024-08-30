@@ -247,8 +247,7 @@ footer > .logo > img{
 }
 
 .copyright {
-    color: rgb(244, 244, 244);
-    font-size: 1.2em;
+    margin-top: 20px;
 }
 
 .copyright > p{
